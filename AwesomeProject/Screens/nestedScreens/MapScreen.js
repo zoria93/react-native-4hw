@@ -27,7 +27,6 @@ const MapScreen = ({ route }) => {
           const coords = await route.params.coords;
           setLocation(coords);
           setErrorMsg("");
-          console.log("useEffect in map");
         } catch (error) {
           setErrorMsg("Error getting location");
           console.log(error);
